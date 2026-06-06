@@ -14,7 +14,7 @@ test("home page loads", async ({ page }) => {
 test("login link visible", async ({ page }) => {
   await expect(
     page.getByRole("link", {
-      name: "Signup / Login",
+      name: " Signup / Login",
     }),
   ).toBeVisible();
 });
@@ -22,6 +22,6 @@ test("login link visible", async ({ page }) => {
 //exercise 2 - fixture exploration
 //fixtures are created by playwright and passed to the test function as arguments.
 //if playwright didnt have fixtures we would have to create and manage them ourselves.
-test("fixture exploration", async ({ page }) => {
-  console.log(typeof page); //object
-});
+// test("fixture exploration", async ({ page }) => {
+//   console.log(typeof page); //object
+// });

@@ -8,7 +8,7 @@ export class SignupPage {
   // the above code is a shorthand for the constructor and property declaration in one step. It automatically creates a private
   // property called page and assigns the value passed to the constructor to it.
   async navigate() {
-    await this.page.goto("https://automationexercise.com/signup");
+    await this.page.goto("https://automationexercise.com/login");
   }
   async fillSignupForm(name: string, email: string) {
     await this.page.getByPlaceholder("Name").fill(name);

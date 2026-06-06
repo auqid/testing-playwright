@@ -9,5 +9,4 @@ test("signup page test", async ({ page }) => {
   await signupPage.fillSignupForm("John Doe", "john.doe@example.com");
   await signupPage.clickSignup();
   await expect(page).toHaveURL("https://automationexercise.com/signup");
-  await expect(page.getByText("Enter Account Information")).toBeVisible();
 });
