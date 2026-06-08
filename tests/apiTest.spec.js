@@ -10,3 +10,19 @@ test("api test", async ({ request }) => {
   const users = await response.json();
   expect(users).toHaveProperty("id", 1);
 });
+
+test("api test with post request", async ({ request }) => {
+  const response = await request.post(
+    "https://jsonplaceholder.typicode.com/posts",
+    {
+      data: {
+        title: "foo",
+        body: "bar",
+        userId: 1,
+      },
+    },
+  );
+  expect(response.status()).toBe(201); //201 is the status code for successful resource creation
+  const post = await response.json(); //parse the response body as JSON
+  expect(post).toHaveProperty("title", "foo"); //validate that the response contains the expected title
+});
