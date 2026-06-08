@@ -6,7 +6,7 @@ import { SignupPage } from "../pages/SignupPage";
 test("signup page test", async ({ page }) => {
   const signupPage = new SignupPage(page);
   await signupPage.navigate();
-  await signupPage.fillSignupForm("John Doe", "john.doe@example.com");
+  await signupPage.fillSignupForm("auqid", "auqid6969@example.com");
   await signupPage.clickSignup();
   await expect(page).toHaveURL("https://automationexercise.com/signup");
 });

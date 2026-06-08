@@ -25,3 +25,14 @@ test("login link visible", async ({ page }) => {
 // test("fixture exploration", async ({ page }) => {
 //   console.log(typeof page); //object
 // });
+
+//exercise 4 - deugging with pause
+test("debug login page", async ({ page }) => {
+  await page.goto("https://automationexercise.com/login");
+  await page.pause();
+});
+
+// exercise 5 - screenshot capture
+test("homepage screenshot", async ({ page }) => {
+  await page.screenshot({ path: "homepage1.png" });
+});
