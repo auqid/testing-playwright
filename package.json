@@ -1,15 +1,23 @@
 {
-  "name": "testing-practise",
+  "name": "testing-playwright",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/auqid/testing-playwright.git"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/auqid/testing-playwright/issues"
+  },
+  "homepage": "https://github.com/auqid/testing-playwright#readme",
   "devDependencies": {
-    "@playwright/test": "^1.60.0",
-    "@types/node": "^25.9.1"
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^26.0.1"
   }
 }
